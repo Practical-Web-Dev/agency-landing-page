@@ -1,0 +1,724 @@
+/* 
+
+
+
+
+
+GLOBAL STYLES
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* 
+
+
+
+
+HEADER/SHOWCASE
+
+
+
+
+
+*/
+
+.header-showcase {
+  background: url(images/desktop/image-header.jpg) no-repeat center center/cover;
+  height: 800px;
+  position: relative;
+}
+
+.nav-logo-container {
+  display: block;
+}
+
+.mobile-logo-container {
+  display: none;
+}
+
+.mobile-menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.main-nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0rem 1rem;
+}
+
+.contact-link {
+  color: #24303E;
+  background: #fff;
+  padding: 1.3rem 2rem;
+  border-radius: 28px;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .2s ease-in;
+}
+
+.contact-link:hover {
+  color: #fff;
+  background-color: #77cef5;
+}
+
+.showcase-header {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  padding-top: 6rem;
+}
+
+.down-arrow-container {
+  text-align: center;
+  margin-top: 9rem;
+}
+
+/* 
+
+
+
+
+
+SERVICES
+
+
+
+*/
+
+
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+.service-text-container {
+  width: 50%;
+}
+
+.service-text {
+  padding: 0rem 9rem;
+}
+
+.service-text-heading {
+  color: #24303E;
+  font-weight: 900;
+  font-size: 40px;
+  padding-bottom: 1.5rem;
+  width: 80%;
+}
+
+.service-text-p {
+  color: #808397;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  padding-bottom: 2rem;
+}
+
+.service-link {
+  color: #24303E;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.yellow-line {
+  height: 10px;
+  width: 130px;
+  border-radius: 28px;
+  opacity: 0.25;
+  background: #FAD400;
+  margin-top: -7px;
+  transition: opacity .2s ease-in;
+}
+
+.yellow-line:hover {
+  opacity: 1;
+}
+
+.service-img-container-egg {
+  background: url(images/desktop/image-transform.jpg) no-repeat center center/cover;
+  width: 50%;
+  height: 600px;
+
+}
+
+
+.service-img-container-glass {
+  background: url(images/desktop/image-stand-out.jpg) no-repeat center center/cover;
+  width: 50%;
+  height: 600px;
+
+}
+
+.pink-line {
+  height: 10px;
+  width: 130px;
+  border-radius: 28px;
+  opacity: 0.25;
+  background: #FE7766;
+  margin-top: -7px;
+  transition: opacity .2s ease-in;
+}
+
+.pink-line:hover {
+  opacity: 1;
+}
+
+/* 
+
+
+
+
+
+
+Design Photography
+
+
+
+
+
+
+*/
+
+.design-photography {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.design-photography-card-1 {
+  background: url(images/desktop/image-graphic-design.jpg) no-repeat center center/cover;
+  width: 50%;
+  height: 500px;
+}
+
+.design-photography-text-container {
+  text-align: center;
+  padding-top: 19rem;
+}
+
+.design-photography-heading {
+  color: #24554A;
+  font-weight: 900;
+  font-size: 28px;
+  padding-bottom: 2rem;
+}
+
+.design-photography-p {
+  color: #3E7467;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.design-photography-card-2 {
+  background: url(images/desktop/image-photography.jpg) no-repeat center center/cover;
+  width: 50%;
+  height: 500px;
+}
+
+/* 
+
+
+
+
+
+
+Testimonials
+
+
+
+
+
+
+*/
+
+.testimonals {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.testimonial-header {
+  color: #a7aaad;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.testimonial-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial {
+  text-align: center;
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.testimonial-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  margin-bottom: 3rem;
+}
+
+.testimonial-p {
+  color: #5B636D;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  padding-bottom: 5rem;
+}
+
+.testimonial-name-container {
+  height: 20px;
+
+}
+
+.testimonial-name {
+  color: #24303E;
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 1rem;
+
+}
+
+.testimonial-occupation {
+  color: #a7aaad;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* 
+
+
+
+
+
+
+Image Gallery
+
+
+
+
+
+
+*/
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  height: 500px;
+}
+
+#gallery-img-1 {
+  background: url(images/desktop/image-gallery-milkbottles.jpg) no-repeat center center/cover;
+
+}
+
+#gallery-img-2 {
+  background: url(images/desktop/image-gallery-orange.jpg) no-repeat center center/cover;
+
+}
+
+#gallery-img-3 {
+  background: url(images/desktop/image-gallery-cone.jpg) no-repeat center center/cover;
+
+}
+
+#gallery-img-4 {
+  background: url(images/desktop/image-gallery-sugarcubes.jpg) no-repeat center center/cover;
+
+}
+
+/* 
+
+
+
+
+
+
+Footer
+
+
+
+
+
+
+*/
+
+footer {
+  background-color: #90D4C6;
+  height: 350px;
+  text-align: center;
+}
+
+.footer-logo {
+  padding-top: 4rem;
+}
+
+.footer-nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.footer-nav-list a {
+  padding: 0rem 2rem;
+  color: #458D7E;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all .2s ease-in;
+}
+
+.footer-nav-list a:hover {
+  color: #fff;
+}
+
+.social-links-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+}
+
+.social-links-menu a {
+  padding: 0px 10px;
+}
+
+/* 
+
+
+
+
+
+
+MEDIA QUERIES
+
+
+
+
+
+
+*/
+
+@media(max-width: 1024px) {
+
+  .service-text {
+    padding: 0rem 6rem;
+  }
+
+  .design-photography-text-container {
+    padding-top: 29rem;
+  }
+
+  .design-photography-card-1 {
+    height: 700px;
+  }
+
+
+  .design-photography-card-2 {
+    height: 700px;
+  }
+
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #gallery-img-1 {
+    background: url(images/mobile/image-gallery-milkbottles.jpg) no-repeat center center/cover;
+
+  }
+
+  #gallery-img-2 {
+    background: url(images/mobile/image-gallery-orange.jpg) no-repeat center center/cover;
+
+  }
+
+  #gallery-img-3 {
+    background: url(images/mobile/image-gallery-cone.jpg) no-repeat center center/cover;
+
+  }
+
+  #gallery-img-4 {
+    background: url(images/mobile/image-gallery-sugar-cubes.jpg) no-repeat center center/cover;
+
+  }
+
+}
+
+@media(max-width: 900px) {
+
+  .header-showcase {
+    background: url(images/mobile/image-header.jpg) no-repeat center center/cover;
+    height: 800px;
+    position: relative;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-logo-container {
+    display: none;
+  }
+
+  .mobile-logo-container {
+    display: block;
+    padding-top: 2.2rem;
+  }
+
+
+  .main-nav {
+    display: none;
+    margin: 0px auto;
+    z-index: 2;
+  }
+
+  .main-nav.show {
+    display: block;
+  }
+
+  .main-nav-links {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    width: 329px;
+    height: 270px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+  }
+
+  .nav-li {
+    margin: 1.3rem 0rem;
+  }
+
+  .nav-link {
+    color: #808397;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  #projects-link {
+    margin-bottom: 2rem;
+  }
+
+  .contact-link {
+    background: #FBD600;
+    transition: none;
+    padding: 1rem 2rem;
+  }
+
+  .showcase-header {
+    font-size: 40px;
+    letter-spacing: 6.25px;
+    padding-top: 9rem;
+  }
+
+  .showcase-header.hide {
+    display: none;
+  }
+
+
+  .down-arrow-container {
+    margin-top: 8rem;
+  }
+
+  .down-arrow-container.hide {
+    display: none;
+  }
+
+  .service {
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+  }
+
+  .service-text-container {
+    width: 100%;
+  }
+
+  .service-text {
+    text-align: center;
+    padding: 0rem 2rem;
+  }
+
+  .service-text-heading {
+    font-size: 32px;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+  }
+
+  .yellow-line {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  #img-one {
+    order: 1;
+  }
+
+  #text-one {
+    order: 2;
+  }
+
+
+
+  .service-img-container-egg {
+    background: url(images/mobile/image-transform.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+
+  }
+
+
+  .service-img-container-glass {
+    background: url(images/mobile/image-stand-out.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+
+  }
+
+  .pink-line {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  .design-photography {
+    flex-direction: column;
+  }
+
+  .design-photography-card-1 {
+    background: url(images/mobile/image-graphic-design.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+  }
+
+
+  .design-photography-p {
+    width: 85%;
+
+  }
+
+  .design-photography-card-2 {
+    background: url(images/mobile/image-photography.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+  }
+
+  .testimonals {
+    padding-top: 4rem;
+  }
+
+  .testimonial-header {
+    font-size: 16px;
+  }
+
+  .testimonial-flex-container {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+
+
+  .testimonial-p {
+
+    padding-bottom: 2rem;
+  }
+
+  .footer-nav-list a {
+    padding: 0rem 1rem;
+
+  }
+
+}
+
+@media(max-width: 350px) {
+  .main-nav-links {
+    width: 290px;
+  }
+
+  .showcase-header {
+    font-size: 34px;
+    letter-spacing: 6px;
+    padding-top: 9rem;
+  }
+}
